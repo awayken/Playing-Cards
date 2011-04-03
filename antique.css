@@ -1,0 +1,26 @@
+@import url('classic.css');
+
+@font-face {
+	font-family: 'DearestRegular';
+	src: url('Dearest-webfont.eot');
+	src: local('☺'), url('Dearest-webfont.woff') format('woff'), url('Dearest-webfont.ttf') format('truetype'), url('Dearest-webfont.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body { font-family: georgia,serif; color: #fff; background: #060; }
+
+a, a:link, a:visited
+	{ color: #ccc; text-decoration: none; }
+a:hover, a:active
+	{ text-decoration: underline; }
+
+#cards { font-family: 'DearestRegular'; background: #fff; }
+
+.hearts, .diams { color: #900; }
+
+.card { background: #eee; border-radius: 0.3em; -moz-border-radius: 0.3em; -webkit-border-radius: 0.3em; }
+.card .value { font-size: 1.75em; }
+.card>.suit { font-size: 4.5em; }
+.hearts>.suit, .diams>.suit { color: #ffc9c9; }
+.clubs>.suit, .spades>.suit { color: #c9c9c9; }

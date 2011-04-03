@@ -1,0 +1,8 @@
+@import url('classic.css');
+
+#cards { background: #090; border-radius: 0.3em; -moz-border-radius: 0.3em; -webkit-border-radius: 0.3em; }
+
+.card { background: #fff; border-radius: 0.5em; -moz-border-radius: 0.5em; -webkit-border-radius: 0.5em; }
+.card>.suit { font-size: 8em; text-indent: 0.21em; position: relative; height: 8em; line-height: 1; }
+.card .value { display: none; }
+.card .value:first-child { display: block; }

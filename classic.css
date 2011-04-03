@@ -1,0 +1,25 @@
+@import url('reset.css');
+
+body { font-family: georgia,serif; background: #fff; }
+
+a, a:link, a:visited
+	{ color: #009; text-decoration: none; }
+a:hover, a:active
+	{ text-decoration: underline; }
+	
+h1 { font-size: 2em; text-align: center; margin-bottom: 0.5em; }
+
+#nav { margin-bottom: 1em; list-style: none; text-align: center; }
+#nav li { display: inline; margin-right: 1em; }
+
+#cards { padding: 0.5em 0 0 0.5em; margin: 0.5em auto; width: 40em; }
+.break { clear: both; }
+
+.clubs, .spades { color: #000; }
+.hearts, .diams { color: #f00; }
+
+.card { width: 4.5em; height: 8em; position: relative; overflow: hidden; margin: 0 0.5em 0.5em 0; float: left; background: #eee; }
+.card .value { position: absolute; bottom: 0; right: 0; width: 1.75em; height: 1.75em; text-align: center; overflow: hidden; line-height: 0.85; padding: 0.10em 0; }
+.card .value:first-child { top: 0; left: 0; }
+.card .value span { display: block; }
+.card>.suit { text-align: center; font-size: 4em; height: 100%; width: 100%; line-height: 2em; }
