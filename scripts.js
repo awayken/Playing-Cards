@@ -36,7 +36,7 @@
 		},
 		
 		makeCards: function (s) {
-			var style = '', cards = $('#cards'), n = 0, i = 0, vals = 13, suits = ['clubs', 'diams', 'spades', 'hearts'];
+			var style = '';
 			
 			if (!s) {
 				style = 'classic';
@@ -45,49 +45,6 @@
 			}
 			
 			$('#cardstyle').attr('href', style + '.css');
-			
-			cards.empty();
-			
-			for (n = 1; n <= vals; n = n + 1) {
-				for (i = 0; i < suits.length; i = i + 1) {
-					cards.append(this.makeCard(n, suits[i]));
-				}
-			}
-			
-			cards.append('<div class="break"></div>');
-		},
-		
-		makeCard: function (value, suit) {
-			var val = value, h = '';
-			
-			switch (val) {
-			case 1:
-				val = 'A';
-				break;
-			case 11:
-				val = 'J';
-				break;
-			case 12:
-				val = 'Q';
-				break;
-			case 13:
-				val = 'K';
-				break;
-			}
-			
-			h = h + '<div class="card ' + suit + '" id="' + suit + '-' + val + '">';
-			h = h + '<div class="value">';
-			h = h + '<span class="amount">' + val + '</span>';
-			h = h + '<span class="suit">&' + suit + ';</span>';
-			h = h + '</div>';
-			h = h + '<span class="suit">&' + suit + ';</span>';
-			h = h + '<div class="value">';
-			h = h + '<span class="amount">' + val + '</span>';
-			h = h + '<span class="suit">&' + suit + ';</span>';
-			h = h + '</div>';
-			h = h + '</div>';
-			
-			return h;
 		}
 	};
 	

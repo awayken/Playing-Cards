@@ -21,6 +21,6 @@ a:hover, a:active
 
 .card { background: #eee; border-radius: 0.3em; -moz-border-radius: 0.3em; -webkit-border-radius: 0.3em; }
 .card .value { font-size: 1.75em; }
-.card>.suit { font-size: 4.5em; }
+.card>.suit { font-size: 6em; line-height: 1.3; }
 .hearts>.suit, .diams>.suit { color: #ffc9c9; }
 .clubs>.suit, .spades>.suit { color: #c9c9c9; }
